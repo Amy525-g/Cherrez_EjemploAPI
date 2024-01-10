@@ -1,5 +1,4 @@
 using Cherrez_EjemploAPI.Model;
-using Network;
 using Newtonsoft.Json;
 using System.Text.Json.Serialization;
 using static Cherrez_EjemploAPI.Model.AC_Weather;
@@ -31,6 +30,8 @@ public partial class AC_ClimaActual : ContentPage
                     var clima = JsonConvert.DeserializeObject<Rootobject>(json);
 
 					weatherLabel.Text = clima.weather[0].main;
+					cityLabel.Text = clima.name;
+					countryLabel.Text = clima.sys.country;
 				}
 
 			}

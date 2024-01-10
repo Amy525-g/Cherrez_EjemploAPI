@@ -27,7 +27,10 @@
 
         <Label Text="Estado del clima: " Grid.Row="4" Grid.Column="0"/>
         <Label x:Name="weatherLabel" Grid.Row="4" Grid.Column="1"/>
-
+        <Label Text="ciudad: " Grid.Row="5" Grid.Column="0"/>
+        <Label x:Name="cityLabel" Grid.Row="5" Grid.Column="1"/>
+        <Label Text="Pais: " Grid.Row="6" Grid.Column="0"/>
+        <Label x:Name="countryLabel" Grid.Row="6" Grid.Column="1"/>
     </Grid>
    
     
